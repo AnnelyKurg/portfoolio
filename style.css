@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Merienda', cursive, sans-serif;
+	line-height: 1.4;
+}
+
+header {
+	line-height: 1;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* page basic style */ 
+/* text */
+.text-primary {
+	color: yellow;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.voco_link {
+	color: #5ABFAD;
+}
+/* padding */
+.py-1 {
+	padding: 1rem 0;
+}
+
+.p-1 {
+	padding: 1rem;
+}
+
+.btn{
+	display: inline-block;
+	padding: 0.5rem 2rem;
+	border: none;
+	border-top-left-radius: 35px;
+	border-bottom-right-radius: 35px;
+}
+
+.btn-primary {
+	background: #3C74A6;
+	color: #fff;
+}
+
+.btn-primary:hover {
+	background: #5ABFAD;
+}
+/* background  */
+.bg-light {
+	background: #f4f4f4;
+	color: #010326;
+}
+
+.bg-dark {
+	color: #fff;
+	background: #010326;
+
+
+}
+
+/*.bg-dark:hover {
+	background: #161459;
+}*/
+
+.bg-primary{
+	background: #5ABFAD;
+	color: #333;
+
+}
+
+/*Navbar*/
+#navbar {
+	background: #010326;
+	color: #fff;
+	position: sticky;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;	
+}
+
+#navbar ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+
+#navbar ul li a{
+	color: #fff;
+	padding: 0.5rem;
+	margin: 0 0.25rem;	
+}
+
+#navbar ul li a:hover {
+	background:  #3C74A6;
+	border-radius: 10px;
+}
+
+/* Showcase */
+#showcase {
+	height: 100vh;
+	color: #fff;
+}
+
+#showcase .showcase-content {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	min-height: 100%;
+	padding: 0 2rem;
+	background-image: url("img/image.png");
+	background-color: #010326;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 55%;
+}
+
+@media only screen and (max-width: 850px) {
+	#showcase .showcase-content {
+		background-image: none;
+	}
+}
+
+.container2 {
+	margin: auto;
+	position: relative;
+	width: 50%;
+	max-width: 300px;
+}
+
+.image2 {
+	display: compact;
+	width: 50%;
+	height: auto;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5); /* Black see-through*/
+	color: #f1f1f1;
+	width: 90%;
+	height: 20%;
+	transition: .5s ease;
+	opacity:0;
+	font-size: 14px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.container2:hover .overlay {
+	opacity: 1;
+}
+
+
+	.heading {
+	font-size: 4rem;
+	margin-bottom: 0.75rem;
+	line-height: 1.1;
+}
+
+.par {
+	font-size: 1.1rem;
+	margin-bottom: 2rem;
+
+}
+
+/* me */
+#me .items {
+	display: flex;
+	width: 65%;
+	margin: auto;
+
+}
+
+#me .item .items {
+	flex: 1;
+}
+
+#me .items .item .program {
+	margin-bottom: 1rem;
+	align-content: inherit;
+	height: 30%;
+	width: 30%;
+}
+
+#me .points{
+	margin: auto;
+	width: 50%;
+	text-align: left;
+	display: block;
+}
+
+#me .points p {
+	margin-bottom: 0.5rem;
+	text-decoration: underline;
+}
+
+/* projects*/
+/*#projects {
+	padding: auto;
+}*/
+
+#projects .jobs {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2rem;
+	width: 75%;
+	/*display: ;*/
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+#projects .jobs p {
+	color: #5ABFAD;
+	font-size: 12px;
+}
+
+h4 {
+	color: #5ABFAD;
+}
+
+	/* skills*/
+
+.job {
+	width: 40%;
+}
+
+#skills .items {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2rem;
+	width: 75%;
+	display: flex;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+#skills .items img {
+	webkit-transform: scale(0.6);
+	transform: scale(0.6)
+}
+
+#skills .items img:hover{
+	webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+	/* contact */
+#contact {
+	display: flex;
+}
+
+#contact .contact-form,
+#contact .contact-map {
+	flex: 1;
+}
+
+#contact .contact-form .form-group {
+	margin: 0.75rem;
+
+}
+
+#contact .contact-form .form-group label {
+	display: block;
+}
+
+#contact .contact-form .form-group input,
+#contact .contact-form .form-group textarea {
+	width: 100%;
+	padding: 0.5rem;
+	border: none;
+}
+
+#contact .contact-form .form-group input:focus,
+#contact .contact-form .form-group textarea:focus {
+	outline: none;
+	border: #333 solid 1px;
+}
+
+
+
+
+
+
+
+
